@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-IntelliJ%202023.3%2B-orange)
 
 ---
-
+<img width="2160" height="1121" alt="demo" src="https://github.com/user-attachments/assets/07e3f012-1824-4ffe-9945-fe8c8f90ba30" />
 ## Features
 
 | Feature | Detail |
@@ -135,4 +135,4 @@ Pull requests are welcome!
 ## License
 
 [MIT](LICENSE)
-<img width="2160" height="1121" alt="demo" src="https://github.com/user-attachments/assets/07e3f012-1824-4ffe-9945-fe8c8f90ba30" />
+

@@ -58,50 +58,6 @@
 5. Click the **Preview toggle** (top-left of the panel) to show/hide previews.
 6. Click **↺** to manually refresh the list.
 
----
-
-## Building from Source
-
-### Prerequisites
-- JDK 8+
-- Gradle (wrapper bundled)
-
-### Steps
-
-```bash
-# Clone
-git clone https://github.com/YOUR_USERNAME/GoToFunction.git
-cd GoToFunction
-
-# Run in a sandbox IDE (downloads IntelliJ ~500 MB on first run)
-./gradlew runIde
-
-# Build installable plugin zip
-./gradlew buildPlugin
-# → build/distributions/GoToFunction-1.0.0.zip
-```
-
-### Project Structure
-
-```
-GoToFunction/
-├── build.gradle
-├── settings.gradle
-├── src/main/
-│   ├── java/com/methodnavigator/
-│   │   ├── MethodNavigatorToolWindowFactory.java  ← registers the tool window
-│   │   ├── MethodNavigatorPanel.java              ← all UI (header, rows, tooltip)
-│   │   ├── MethodParser.java                      ← language parsers
-│   │   ├── MethodInfo.java                        ← data model
-│   │   └── FileEditorListener.java               ← tab-switch listener
-│   └── resources/
-│       ├── META-INF/plugin.xml
-│       └── icons/navigator.svg
-└── README.md
-```
-
----
-
 ## Compatibility
 
 | IDE | Min version |
@@ -111,26 +67,6 @@ GoToFunction/
 | WebStorm | 2023.3+ |
 | Other JetBrains IDEs | 2023.3+ (untested) |
 
----
-
-## Contributing
-
-Pull requests are welcome!
-
-1. Fork this repository
-2. Create a feature branch: `git checkout -b feature/my-improvement`
-3. Make your changes and test with `./gradlew runIde`
-4. Commit: `git commit -m "feat: describe your change"`
-5. Push: `git push origin feature/my-improvement`
-6. Open a Pull Request
-
-### Common contribution ideas
-- Add support for a new language
-- Improve the Java/Kotlin/JS regex accuracy
-- Add unit tests for `MethodParser`
-- UI improvements
-
----
 
 ## License
 
